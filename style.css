@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.4s;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 25px 40px;   /* reduced side padding */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* THIS is the fix */
+    z-index: 1000;
+    color: white;
+}
+
+/* Center logo */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    letter-spacing: 4px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: white;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Split Layout */
+.split {
+    display: flex;
+    height: 100vh;
+}
+
+.side {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.side h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    letter-spacing: 4px;
+    z-index: 2;
+}
+
+.side::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: 0.6s;
+    z-index: 1;
+}
+
+.male::before {
+    background-image: url("Images/seintone.jpg");
+}
+
+.female::before {
+    background-image: url("Images/seintone.jpg");
+}
+
+.side:hover::before {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.button {
+    position: absolute;
+    bottom: 80px;
+    padding: 12px 30px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: white;
+    color: black;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+}
+
+/* Dark mode */
+.dark {
+    background: black;
+}
+
+.dark nav a,
+.dark footer {
+    color: white;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .split {
+        flex-direction: column;
+    }
+
+    .side h1 {
+        font-size: 30px;
+    }
+}

@@ -1,18 +1,33 @@
 function toggleMode() {
     document.body.classList.toggle("dark");
 }
-// Get form
+
+// ===== CONTACT PAGE =====
 var form = document.getElementById("contactForm");
 
-form.onsubmit = function(event) {
+if (form) {
+    form.onsubmit = function(event) {
+        event.preventDefault();
 
-    event.preventDefault(); // Stop page refresh
+        var name = document.getElementById("name").value;
+        var message = document.getElementById("successMessage");
 
-    var name = document.getElementById("name").value;
+        message.innerHTML = "Thank you " + name + "! Your message has been sent successfully.";
 
-    var message = document.getElementById("successMessage");
+        form.reset();
+    };
+}
 
-    message.innerHTML = "Thank you " + name + "! Your message has been sent successfully.";
 
-    form.reset(); // Clear form
-};
+// ===== SERVICES PAGE (Simple Cart) =====
+var total = 0;
+var items = [];
+
+function addToCart(productName, price) {
+
+    total = total + price;
+    items.push(productName);
+
+    document.getElementById("cartItems").innerHTML = items.join(", ");
+    document.getElementById("totalPrice").innerHTML = total;
+}

@@ -175,46 +175,35 @@ footer {
     }
 }
 /* ===== For Contact Page ===== */
-#head{
-    margin-top:20px; 
-    font-size:18px;
+.contact-form {
+    margin-top: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
-#form{
-    margin-top:40px; 
-    max-width:600px; 
-    margin-left:auto; 
-    margin-right:auto;
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
-#text{
-    width:100%; 
-    padding:12px; 
-    margin-bottom:20px; 
-    border:1px solid #ccc; 
-    border-radius:5px;
+
+.contact-form button {
+    padding: 12px 30px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
-#email{
-    width:100%; 
-    padding:12px; 
-    margin-bottom:20px; 
-    border:1px solid #ccc; 
-    border-radius:5px;
+
+.contact-form button:hover {
+    background: #333;
 }
-#textbox{
-    width:100%; 
-    padding:12px; 
-    margin-bottom:20px; 
-    border:1px solid #ccc; 
-    border-radius:5px;
-}
-#submit{
-    padding:12px 30px; 
-    border:1px solid black; 
-    background:black; 
-    color:white; 
-    cursor:pointer;
-}
-#info{
-    margin-top:50px; 
-    font-size:18px; 
-    line-height:2;
+
+.success-message {
+    color: green;
+    margin-top: 20px;
 }

@@ -1,61 +1,61 @@
+/* ===== GENERAL ===== */
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    transition: 0.4s;
+    background-color: white;
+    transition: 0.3s ease;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 25px 40px;   /* reduced side padding */
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* THIS is the fix */
-    z-index: 1000;
-    color: white;
-}
-
-/* Center logo */
-.logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+h1, h2 {
     font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: black;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.logo {
     font-size: 26px;
     letter-spacing: 4px;
+    margin-bottom: 15px;
 }
 
 /* Navigation */
 nav {
-    display: flex;
-    gap: 40px;
+    margin-top: 5px;
 }
 
 nav a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    margin: 0 18px;
     font-size: 13px;
     letter-spacing: 2px;
-    position: relative;
+    position: relative;   /* IMPORTANT */
 }
 
+/* Animated underline */
 nav a::after {
     content: "";
     position: absolute;
+    left: 0;
+    bottom: -6px;
     width: 0;
     height: 1px;
     background: white;
-    left: 0;
-    bottom: -6px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 nav a:hover::after {
     width: 100%;
 }
 
-/* Split Layout */
+/* ===== SPLIT SECTION (Home Page) ===== */
 .split {
     display: flex;
     height: 100vh;
@@ -73,9 +73,7 @@ nav a:hover::after {
 }
 
 .side h1 {
-    font-family: 'Playfair Display', serif;
     font-size: 50px;
-    letter-spacing: 4px;
     z-index: 2;
 }
 
@@ -85,7 +83,7 @@ nav a:hover::after {
     inset: 0;
     background-size: cover;
     background-position: center;
-    transition: 0.6s;
+    transition: 0.6s ease;
     z-index: 1;
 }
 
@@ -98,16 +96,17 @@ nav a:hover::after {
 }
 
 .side:hover::before {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.45);
     z-index: 1;
 }
 
+/* Buttons */
 .button {
     position: absolute;
     bottom: 80px;
@@ -116,7 +115,7 @@ nav a:hover::after {
     color: white;
     text-decoration: none;
     z-index: 2;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .button:hover {
@@ -124,32 +123,54 @@ nav a:hover::after {
     color: black;
 }
 
-footer {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 14px;
+/* ===== SECTION (About Page) ===== */
+section {
+    padding: 100px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
 }
 
-/* Dark mode */
+/* Dropdown */
+select {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* ===== DARK MODE ===== */
 .dark {
     background: black;
-}
-
-.dark nav a,
-.dark footer {
     color: white;
 }
 
-/* Responsive */
-@media(max-width: 768px) {
+.dark header,
+.dark footer {
+    background: #111;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
     .split {
         flex-direction: column;
     }
 
     .side h1 {
         font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px 10px;
     }
 }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services - PAYFUME</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">PAYFUME</div>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<section>
+
+    <h1 style="text-align:center;">Our Perfume Collection</h1>
+
+    <div class="services-container">
+
+        <div class="service-box">
+            <h2>Men's Perfume</h2>
+            <p>Elegant and long-lasting fragrance for men.</p>
+            <p><strong>$50</strong></p>
+            <button onclick="addToCart('Men Perfume', 50)">Add to Cart</button>
+        </div>
+
+        <div class="service-box">
+            <h2>Women's Perfume</h2>
+            <p>Sweet and floral fragrance for women.</p>
+            <p><strong>$60</strong></p>
+            <button onclick="addToCart('Women Perfume', 60)">Add to Cart</button>
+        </div>
+
+        <div class="service-box">
+            <h2>Luxury Collection</h2>
+            <p>Premium exclusive luxury scent.</p>
+            <p><strong>$120</strong></p>
+            <button onclick="addToCart('Luxury Perfume', 120)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <div class="cart-section">
+        <h2>Your Cart</h2>
+        <p id="cartItems">No items yet</p>
+        <h3>Total: $<span id="totalPrice">0</span></h3>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 PAYFUME. All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

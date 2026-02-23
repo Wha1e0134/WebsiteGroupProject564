@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us - PAYFUME</title>
 
-<!-- Google Font -->
+<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
 <!-- External CSS -->
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -26,31 +27,25 @@
 
 <section>
 
-    <h1>Contact Us</h1>
+    <h1 style="text-align:center;">Contact Us</h1>
 
-    <p id="head">
-        We'd love to hear from you! Send us a message and our team will respond as soon as possible.
+    <p style="text-align:center; margin-top:20px;">
+        We'd love to hear from you!
     </p>
 
-    <form id="form">
+    <form id="contactForm" class="contact-form">
         
-        <input type="text" placeholder="Your Name" required id="text">
+        <input type="text" id="name" placeholder="Your Name" required>
         
-        <input type="email" placeholder="Your Email" required id="email">
+        <input type="email" id="email" placeholder="Your Email" required>
         
-        <textarea placeholder="Your Message" rows="6" required id="textbox"></textarea>
+        <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
         
-        <button type="submit" id="submit">
-            Send Message
-        </button>
+        <button type="submit">Send Message</button>
+
+        <p id="successMessage" class="success-message"></p>
 
     </form>
-
-    <div id="info">
-        <p><strong>Email:</strong> support@payfume.com</p>
-        <p><strong>Phone:</strong> +66 812 345 678</p>
-        <p><strong>Location:</strong> Bangkok, Thailand</p>
-    </div>
 
 </section>
 
@@ -58,7 +53,8 @@
     © 2026 PAYFUME. All Rights Reserved.
 </footer>
 
-<script src="js/script.js"></script>
+<!-- External JavaScript -->
+<script src="script.js"></script>
 
 </body>
 </html>

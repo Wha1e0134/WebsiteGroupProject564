@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PAYFUME</title>
+<title>Contact Us - PAYFUME</title>
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
@@ -15,35 +15,47 @@
 <body>
 
 <header>
-    
     <div class="logo">PAYFUME</div>
     <nav>
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT</a>
         <a href="services.html">SERVICES</a>
         <a href="contact.html">CONTACT</a>
-        <!--<a href="#" onclick="toggleMode()">☾</a>-->
     </nav>
 </header>
 
-<div class="split">
+<section>
 
-    <div class="side male">
-        <div class="overlay"></div>
-        <h1>FOR HIM</h1>
-        <a href="services.html" class="button">Explore Men's</a>
+    <h1>Contact Us</h1>
+
+    <p id="head">
+        We'd love to hear from you! Send us a message and our team will respond as soon as possible.
+    </p>
+
+    <form id="form">
+        
+        <input type="text" placeholder="Your Name" required id="text">
+        
+        <input type="email" placeholder="Your Email" required id="email">
+        
+        <textarea placeholder="Your Message" rows="6" required id="textbox"></textarea>
+        
+        <button type="submit" id="submit">
+            Send Message
+        </button>
+
+    </form>
+
+    <div id="info">
+        <p><strong>Email:</strong> support@payfume.com</p>
+        <p><strong>Phone:</strong> +66 812 345 678</p>
+        <p><strong>Location:</strong> Bangkok, Thailand</p>
     </div>
 
-    <div class="side female">
-        <div class="overlay"></div>
-        <h1>FOR HER</h1>
-        <a href="services.html" class="button">Explore Women's</a>
-    </div>
-
-</div>
+</section>
 
 <footer>
-    © 2026 ÉLÉGANCE Perfume
+    © 2026 PAYFUME. All Rights Reserved.
 </footer>
 
 <script src="js/script.js"></script>

@@ -36,7 +36,7 @@ nav a {
     margin: 0 18px;
     font-size: 13px;
     letter-spacing: 2px;
-    position: relative;   /* IMPORTANT */
+    position: relative;   
 }
 
 /* Animated underline */
@@ -88,11 +88,11 @@ nav a:hover::after {
 }
 
 .male::before {
-    background-image: url("Images/seintone.jpg");
+    background-image: url("Images/male\ right.jpg");
 }
 
 .female::before {
-    background-image: url("Images/seintone.jpg");
+    background-image: url("Images/female\ left.jpg");
 }
 
 .side:hover::before {

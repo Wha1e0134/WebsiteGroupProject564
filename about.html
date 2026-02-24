@@ -33,112 +33,56 @@
     <p style="margin-top:30px; font-size:18px; line-height:1.8;">
         PAYFUME is a modern perfume shopping website created for fragrance lovers. 
         Our mission is to provide high-quality perfumes for both men and women at affordable prices.
-    </p>
-
-    <p style="margin-top:20px; font-size:18px; line-height:1.8;">
         We carefully select elegant and long-lasting fragrances that suit different personalities 
         and occasions.
     </p>
+
+    <h2>Our Vision</h2>
+<p>
+Our vision is to become a trusted online perfume destination where customers can explore, discover, and enjoy premium fragrances anytime, anywhere.
+</p>
 
     <!-- Dropdown Section -->
     <h2 style="margin-top:50px;">Our Perfume Categories</h2>
 
     <div class="category-box">
         <select onchange="showCategory(this.value)">
-            <option value="">-- Select Category --</option>
+            <option value="">-- Perfume Category --</option>
             <option value="Men's Collection">Men's Collection</option>
             <option value="Women's Collection">Women's Collection</option>
-            <option value="Floral Fragrance">Floral Fragrance</option>
-            <option value="Woody Fragrance">Woody Fragrance</option>
-            <option value="Fresh Fragrance">Fresh Fragrance</option>
+            <option value="Luxury Collection">Luxury Collection</option>
+           
         </select>
-
+       
         <div id="categoryResult"></div>
     </div>
 
     <!-- Why Choose Us -->
     <h2 style="margin-top:50px; font-size:28px;">Why Choose Us?</h2>
 
-    <ul style="list-style:none; padding:0; margin-top:20px; font-size:18px; line-height:2;">
+    <ul style="list-style:none; padding:0; margin-top:20px; font-size:14px; line-height:2;">
         <li>✔ Premium Quality Products</li>
         <li>✔ Affordable Prices</li>
         <li>✔ Easy Online Shopping</li>
         <li>✔ Customer Satisfaction</li>
     </ul>
+<h2>Help & Support</h2>
 
+<p>
+You can also visit our contact section for common questions about shipping, returns, and payments.
+</p>
 </section>
 
 <footer>
     © 2026 PAYFUME. All Rights Reserved.
 </footer>
-<style>
+
+<script src="script.js"></script>
 
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-}
 
-
-header {
-    background: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Section */
-section {
-    padding: 120px 20px;
-    text-align: center;
-    max-width: 900px;
-    margin: auto;
-}
-
-/* Dropdown */
-.category-box {
-    margin-top: 40px;
-}
-
-select {
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-/* Footer */
-footer {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-</style>
-</style>
-<script>
-function showCategory(value) {
-    if(value === "") {
-        document.getElementById("categoryResult").innerHTML = "";
-    } else {
-        document.getElementById("categoryResult").innerHTML =
-        "You selected: " + value;
-    }
-}
-</script>
 
 </body>
 </html>
+
+

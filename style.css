@@ -293,3 +293,34 @@ footer {
     padding: 20px;
     margin-top: 50px;
 }
+body.dark {
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+body.dark header,
+body.dark footer {
+    background-color: #111;
+}
+
+body.dark .service-box {
+    background: #1a1a1a;
+    border-color: #333;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+    background: #1a1a1a;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+body.dark .contact-form button,
+body.dark .service-box button {
+    background: #222;
+}
+
+body.dark .button:hover {
+    color: black;
+}

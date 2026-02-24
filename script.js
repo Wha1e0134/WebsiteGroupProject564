@@ -31,3 +31,10 @@ function addToCart(productName, price) {
     document.getElementById("cartItems").innerHTML = items.join(", ");
     document.getElementById("totalPrice").innerHTML = total;
 }
+
+// === about category === //
+function showCategory(value) {
+    if (value !== "") {
+        window.location.href = "services.html?category=" + encodeURIComponent(value);
+    }
+}

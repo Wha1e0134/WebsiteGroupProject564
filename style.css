@@ -357,3 +357,6 @@ body.dark .service-box button {
 body.dark .button:hover {
     color: black;
 }
+header {
+    position: relative;
+}

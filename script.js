@@ -38,3 +38,17 @@ function showCategory(value) {
         window.location.href = "services.html?category=" + encodeURIComponent(value);
     }
 }
+
+/*place order*/
+if (form) {
+    form.onsubmit = function(event) {
+        event.preventDefault();
+
+        var name = document.getElementById("name").value;
+        var message = document.getElementById("successMessage");
+
+        message.innerHTML = "Thank you " + name + "! Your order has been placed successfully.";
+
+        form.reset();
+    };
+}

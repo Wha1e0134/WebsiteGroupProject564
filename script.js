@@ -56,3 +56,11 @@ if (form) {
         form.reset();
     };
 }
+function updateDateTime() {
+  const now = new Date();
+  document.getElementById("currentDateTime").textContent =
+    now.toLocaleString();
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();

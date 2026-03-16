@@ -19,10 +19,12 @@ header {
     text-align: center;
 }
 
-.logo {
-    font-size: 26px;
-    letter-spacing: 4px;
-    margin-bottom: 15px;
+.logo{
+    font-size:30px;
+    letter-spacing:4px;
+    margin-left:5px;
+    font-family: "Sofia", sans-serif;
+     line-height:1;
 }
 
 /* Navigation */
@@ -241,441 +243,58 @@ footer {
     text-align: center;
 }
 /*===about====*/
- .about-hero {
-      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-                  url(Images/fragrance.jpg) center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 140px 20px 100px;
-    }
-
-    .about-hero h1 {
-      font-size: 52px;
-      margin-bottom: 15px;
-      letter-spacing: 3px;
-    }
-
-    .about-hero p {
-      max-width: 750px;
-      margin: auto;
-      font-size: 18px;
-      line-height: 1.8;
-    }
-
-    .about-section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 80px 20px;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .about-card {
-      border: 1px solid #e5e5e5;
-      border-radius: 12px;
-      padding: 30px;
-      background: #fff;
-      transition: 0.3s ease;
-    }
-
-    .about-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    }
-
-    .about-card h3 {
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 15px;
-      font-size: 26px;
-    }
-
-    .about-card p {
-      line-height: 1.8;
-      font-size: 15px;
-    }
-
-    .about-intro {
-      text-align: center;
-      max-width: 850px;
-      margin: auto;
-    }
-
-    .about-intro h2 {
-      font-size: 34px;
-      margin-bottom: 20px;
-    }
-
-    .about-intro p {
-      font-size: 17px;
-      line-height: 1.9;
-      color: #333;
-    }
-
-    .why-payfume {
-      margin-top: 70px;
-      text-align: center;
-    }
-
-    .why-payfume h2 {
-      margin-bottom: 30px;
-      font-size: 34px;
-    }
-
-    .why-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .why-item {
-      padding: 25px;
-      border: 1px solid #e5e5e5;
-      border-radius: 10px;
-      background: #fafafa;
-    }
-
-    .why-item i {
-      font-size: 26px;
-      margin-bottom: 15px;
-      color: #000;
-    }
-
-    .why-item h4 {
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
-
-    .why-item p {
-      font-size: 14px;
-      line-height: 1.7;
-      color: #444;
-    }
-
-    .about-cta {
-      margin-top: 80px;
-      text-align: center;
-      background: #000;
-      color: #fff;
-      padding: 70px 20px;
-      border-radius: 14px;
-    }
-
-    .about-cta h2 {
-      font-size: 36px;
-      margin-bottom: 15px;
-    }
-
-    .about-cta p {
-      max-width: 700px;
-      margin: 0 auto 30px;
-      line-height: 1.8;
-      font-size: 16px;
-    }
-
-    .about-cta a {
-      display: inline-block;
-      padding: 12px 28px;
-      border: 1px solid #fff;
-      color: #fff;
-      text-decoration: none;
-      transition: 0.3s ease;
-    }
-
-    .about-cta a:hover {
-      background: #fff;
-      color: #000;
-    }
-
-    .footer-links {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 40px;
-      max-width: 1200px;
-      margin: auto;
-      text-align: left;
-      padding-top: 30px;
-    }
-
-    .footer-links h3 {
-      font-size: 18px;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
-    }
-
-    .footer-links a {
-      display: block;
-      color: #ddd;
-      text-decoration: none;
-      margin-bottom: 12px;
-      font-size: 14px;
-      transition: 0.3s;
-    }
-
-    .footer-links a:hover {
-      color: white;
-    }
-
-    .social-icons a {
-      display: inline-block;
-      color: white;
-      font-size: 26px;
-      margin-right: 15px;
-    }
-
-    .payment-icons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-    }
-
-    .payment-icons span {
-      display: inline-block;
-      padding: 10px 14px;
-      background: #fff;
-      color: #000;
-      border-radius: 6px;
-      font-size: 13px;
-      font-weight: 600;
-    }
-
-    body.dark .about-card,
-    body.dark .why-item {
-      background: #1a1a1a;
-      border-color: #333;
-      color: #fff;
-    }
-
-    body.dark .about-intro p,
-    body.dark .why-item p {
-      color: #ddd;
-    }
-
-    @media (max-width: 768px) {
-      .about-hero h1 {
-        font-size: 38px;
-      }
-
-      .about-hero p {
-        font-size: 16px;
-      }
-
-      .about-cta h2 {
-        font-size: 28px;
-      }
-    }
-/* === review section ====*/
-.review-form-section {
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 20px;
-}
-
-.review-form-box {
-    background: #f5f5f5;
-    border-radius: 18px;
-    padding: 30px;
-    margin-bottom: 50px;
-}
-
-.review-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.review-title-wrap {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
-
-.review-title-wrap h2 {
+body {
     margin: 0;
-    font-size: 32px;
-    letter-spacing: 1px;
+    font-family: Arial, sans-serif;
+    background-color: white;
 }
 
-.review-icon {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background: #f2d3bf;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #7a3419;
-    font-size: 16px;
-}
 
-.review-form label {
-    display: block;
-    font-weight: 600;
-    margin: 18px 0 10px;
-    text-align: left;
-}
-
-.review-form label span {
-    color: #ff6a00;
-}
-
-.star-rating {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.star-rating .star {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #d9d9df;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 24px;
-    transition: 0.3s ease;
-}
-
-.star-rating .star.active {
-    background: #ff6a00;
-}
-
-.review-form input,
-.review-form textarea {
-    width: 100%;
-    padding: 14px 16px;
-    border: 1px solid #ddd;
-    border-radius: 30px;
-    font-size: 15px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-}
-
-.review-form textarea {
-    border-radius: 18px;
-    resize: vertical;
-}
-
-.review-form button {
-    margin-top: 15px;
-    padding: 14px 30px;
+header {
     background: black;
     color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 15px;
-}
-
-.review-form button:hover {
-    background: #333;
-}
-
-.review-success {
-    color: green;
-    margin-top: 15px;
-    font-weight: 600;
-}
-
-.customer-reviews h2 {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.review-card {
-    border: 1px solid #ddd;
-    border-radius: 14px;
     padding: 20px;
-    margin-bottom: 20px;
-    background: white;
-    text-align: left;
+    text-align: center;
 }
 
-.review-card .review-stars {
-    color: #ff6a00;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.review-card h3 {
-    margin: 8px 0;
-    font-size: 20px;
-}
-
-.review-card p {
-    margin: 8px 0;
-    line-height: 1.7;
-}
-
-.review-card strong {
-    display: inline-block;
-    margin-top: 10px;
-}
-
-body.dark .review-form-box {
-    background: #1a1a1a;
-}
-
-/* ===== IMPROVED DARK MODE ===== */
-body.dark {
-    background-color: #0f0f0f;
-    color: #ffffff;
-}
-
-body.dark header,
-body.dark footer {
-    background-color: #111;
-}
-
-body.dark .service-box {
-    background: #1a1a1a;
-    border-color: #333;
-}
-
-body.dark input,
-body.dark textarea,
-body.dark select {
-    background: #1a1a1a;
-    color: #fff;
-    border: 1px solid #444;
-}
-
-body.dark .contact-form button,
-body.dark .service-box button {
-    background: #222;
-}
-
-body.dark .button:hover {
-    color: black;
-}
-header {
-    position: relative;
-}
-
-
-body.dark .review-form input,
-body.dark .review-form textarea {
-    background: #111;
+nav a {
     color: white;
-    border: 1px solid #333;
+    text-decoration: none;
+    margin: 0 15px;
 }
 
-body.dark .review-card {
-    background: #1a1a1a;
-    border-color: #333;
+nav a:hover {
+    text-decoration: none;
 }
 
-/* ===== IMPROVED DARK MODE ===== */
+/* Section */
+section {
+    padding: 120px 20px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Dropdown */
+.category-box {
+    margin-top: 40px;
+}
+
+select {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
 body.dark {
     background-color: #0f0f0f;
     color: #ffffff;
@@ -707,6 +326,167 @@ body.dark .service-box button {
 body.dark .button:hover {
     color: black;
 }
-header {
-    position: relative;
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:black;
+    padding:20px 60px;
+    position:relative;
+}
+
+/* left side */
+.nav-left{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+
+
+.material-symbols-outlined{
+    font-size:40px;
+    vertical-align:middle;
+}
+
+/* right nav */
+.nav-right a{
+    color:white;
+    text-decoration:none;
+    letter-spacing:3px;
+    position:relative;
+}
+
+.nav-right a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:white;
+    transition:0.3s ease;
+}
+
+.nav-right a:hover::after{
+    width:100%;
+}
+
+/* dropdown menu */
+.action-menu{
+display:none;
+position:absolute;
+top:80px;
+left:20px;
+background:white;
+padding:15px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+z-index:1000;
+}
+
+.action-menu.show{
+display:block;
+}
+
+    .toggle-icon{
+font-size:26px;
+cursor:pointer;
+transition: 0.3s;
+color:#444;
+}
+
+.dark-mode .toggle-icon{
+color:#ddd;
+background: #111;
+}
+
+.toggle-icon:hover{
+transform: rotate(20deg);
+}
+
+
+.action-menu{
+display:none;
+position:absolute;
+top:70px;
+left:0;
+background:white;
+padding:15px;
+border-radius:8px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+z-index:2000;
+}
+
+.action-menu button:hover{
+background:#ddd;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#menuBtn{
+    cursor:pointer;
+    z-index:2000;
+    position:relative;
+    font-size: 48px;
+}
+
+.theme-switch{
+position:relative;
+display:inline-block;
+width:60px;
+height:30px;
+}
+
+.theme-switch input{
+opacity:0;
+width:0;
+height:0;
+}
+
+.slider{
+position:absolute;
+background:#ccc;
+border-radius:30px;
+top:0;
+left:0;
+right:0;
+bottom:0;
+cursor:pointer;
+transition:0.3s;
+}
+
+#themeIcon{
+position:absolute;
+left:4px;
+top:3px;
+font-size:22px;
+transition:0.3s;
+}
+
+input:checked + .slider{
+background:#363333;
+}
+
+input:checked + .slider #themeIcon{
+transform:translateX(28px);
+}
+
+.dark-mode{
+background:#111;
+color:white;
+}
+
+.dark-mode header{
+background:#000;
+}
+
+.dark-mode a{
+color:white;
 }

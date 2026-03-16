@@ -14,9 +14,10 @@ $name=$_POST['name'];
 $brand=$_POST['brand'];
 $gender=$_POST['gender'];
 $ml=$_POST['ml'];
+$price=$_POST['price'];
 
 $conn->query("UPDATE perfumes 
-SET name='$name', brand='$brand', gender='$gender', ml='$ml'
+SET name='$name', brand='$brand', gender='$gender', ml='$ml', price='$price'
 WHERE id=$id");
 
 header("Location: admin.php");
@@ -32,6 +33,8 @@ header("Location: admin.php");
 <input type="text" name="name" value="<?php echo $row['name']; ?>"><br><br>
 
 <input type="text" name="brand" value="<?php echo $row['brand']; ?>"><br><br>
+
+<input type="number" name="price" value="<?php echo $row['price']; ?>"><br><br>
 
 <select name="gender">
 

@@ -1,79 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us - PAYFUME</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - PAYFUME</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 
+  
 </head>
-
 <body>
 
-<header>
+  <header>
+    <div class="logo">PAYFUME</div>
 
-   <div class="nav-left">
-<span id="menuBtn" class="material-symbols-outlined">menu</span>
-<div class="logo">PAYFUME</div>
-</div>
+    <button id="theme-toggle" aria-label="Toggle theme">
+      <i class="fa-solid fa-moon"></i>
+    </button>
 
-<nav class="nav-right">
-<a href="index.html">HOME</a>
-<a href="about.html">ABOUT</a>
-<a href="services.html">SERVICES</a>
-<a href="contact.html">CONTACT</a>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
 
-
-   <label class="theme-switch">
-    <input type="checkbox" id="themeToggle">
-
-    <span class="slider">
-        <span id="themeIcon" class="material-symbols-outlined">
-            light_mode
-        </span>
-    </span>
-</label>
- 
-</nav>
-
-</header>
-
-<section>
-
-    <h1 style="text-align:center;">Contact Us</h1>
-
-    <p style="text-align:center; margin-top:20px;">
-        We'd love to hear from you!
+  <section class="about-hero">
+    <h1>ABOUT PAYFUME</h1>
+    <p>
+      Discover premium fragrances designed to express confidence, elegance, and individuality.
+      At PAYFUME, we bring together quality scents for every style, mood, and occasion.
     </p>
+  </section>
 
-    <form id="contactForm" class="contact-form">
-        
-        <input type="text" placeholder="Your Name" required>
-        
-        <input type="email" placeholder="Your Email" required>
-        
-        <textarea rows="6" placeholder="Your Message" required></textarea>
-        
-        <button type="submit">Send Message</button>
+  <section class="about-section">
+    <div class="about-intro">
+      <h2>Our Story</h2>
+      <p>
+        PAYFUME was created for fragrance lovers who want more than just perfume — they want
+        an experience. We believe scent is a powerful part of personal style, and our goal is
+        to make luxury-inspired fragrances more accessible through a simple, modern online store.
+        From bold masculine notes to soft floral blends and exclusive luxury collections,
+        each fragrance in our selection is chosen to help you find your perfect signature scent.
+      </p>
+    </div>
 
-        <p id="successMessage" class="success-message"></p>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>Our Mission</h3>
+        <p>
+          To offer high-quality perfumes at affordable prices while giving every customer
+          a smooth, enjoyable, and elegant shopping experience online.
+        </p>
+      </div>
 
+      <div class="about-card">
+        <h3>Our Vision</h3>
+        <p>
+          To become a trusted online fragrance destination where customers can discover,
+          explore, and enjoy premium perfumes anytime, anywhere.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3>Our Collection</h3>
+        <p>
+          We provide carefully selected fragrances for men, women, and lovers of luxury scents,
+          with options suitable for everyday wear and unforgettable special occasions.
+        </p>
+      </div>
+    </div>
+
+    <div class="why-payfume">
+      <h2>Why Choose PAYFUME</h2>
+
+      <div class="why-list">
+        <div class="why-item">
+          <i class="fa-solid fa-gem"></i>
+          <h4>Premium Quality</h4>
+          <p>We focus on elegant, long-lasting fragrances with a refined feel.</p>
+        </div>
+
+        <div class="why-item">
+          <i class="fa-solid fa-tags"></i>
+          <h4>Affordable Prices</h4>
+          <p>Luxury-inspired perfume shopping without the luxury price barrier.</p>
+        </div>
+
+        <div class="why-item">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h4>Easy Shopping</h4>
+          <p>Simple browsing, smooth ordering, and a customer-friendly experience.</p>
+        </div>
+
+        <div class="why-item">
+          <i class="fa-solid fa-heart"></i>
+          <h4>Customer First</h4>
+          <p>Your satisfaction is at the center of everything we do.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-cta">
+      <h2>Find Your Signature Scent</h2>
+      <p>
+        Explore our perfume collection and discover fragrances that match your personality,
+        confidence, and style.
+      </p>
+      <a href="services.html">Shop Now</a>
+    </div>
+  </section>
+<section class="review-form-section">
+  <div class="review-form-box">
+    <div class="review-header">
+      <div class="review-title-wrap">
+        <div class="review-icon">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h2>Review</h2>
+      </div>
+    </div>
+
+    <form id="reviewForm" class="review-form">
+      <label>Rate your experience <span>*</span></label>
+
+      <div class="star-rating" id="starRating">
+        <i class="fa-solid fa-star star" data-value="1"></i>
+        <i class="fa-solid fa-star star" data-value="2"></i>
+        <i class="fa-solid fa-star star" data-value="3"></i>
+        <i class="fa-solid fa-star star" data-value="4"></i>
+        <i class="fa-solid fa-star star" data-value="5"></i>
+      </div>
+
+      <input type="hidden" id="ratingValue" value="0">
+
+      <label for="reviewTitle">Give your review a title</label>
+      <input
+        type="text"
+        id="reviewTitle"
+        placeholder="What is the most important information?"
+        required
+      >
+
+      <label for="reviewMessage">Write your review</label>
+      <textarea
+        id="reviewMessage"
+        rows="5"
+        placeholder="Tell us about the perfume, quality, delivery, or your experience..."
+        required
+      ></textarea>
+
+      <input
+        type="text"
+        id="reviewName"
+        placeholder="Your name"
+        required
+      >
+
+      <button type="submit">Submit Review</button>
+
+      <p id="reviewSuccess" class="review-success"></p>
     </form>
+  </div>
 
+  <div class="customer-reviews">
+    <h2>Customer Reviews</h2>
+    <div id="reviewsList"></div>
+  </div>
 </section>
+  <footer>
+    <div class="footer-links">
+      <div>
+        <h3>CUSTOMER SERVICES</h3>
+        <a href="contact.html">Shipping & Delivery</a>
+        <a href="contact.html">Returns & Refunds</a>
+        <a href="contact.html">Customer Reviews</a>
+        <a href="contact.html">FAQ's</a>
+        <a href="contact.html">Contact & Help Centre</a>
+      </div>
 
-<footer>
-    © 2026 PAYFUME. All Rights Reserved.
-     <p id="currentDateTime"></p>
-</footer>
+      <div>
+        <h3>INFORMATION</h3>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Our Collection</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Support</a>
+      </div>
 
-<!-- External JavaScript -->
-<script src="script.js"></script>
+      <div>
+        <h3>WE ACCEPT</h3>
+        <div class="payment-icons">
+          <span>VISA</span>
+          <span>AMEX</span>
+          <span>Mastercard</span>
+          <span>PayPal</span>
+          <span>Apple Pay</span>
+          <span>Google Pay</span>
+        </div>
+      </div>
+
+      <div>
+        <h3>FOLLOW US</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1G55bbYmSF/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:40px;">© 2026 PAYFUME. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>

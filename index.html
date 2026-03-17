@@ -3,77 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us - PAYFUME</title>
+<title>PAYFUME</title>
 
+<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-
-   <div class="nav-left">
-<span id="menuBtn" class="material-symbols-outlined">menu</span>
-<div class="logo">PAYFUME</div>
-</div>
-
-<nav class="nav-right">
-<a href="index.html">HOME</a>
-<a href="about.html">ABOUT</a>
-<a href="services.html">SERVICES</a>
-<a href="contact.html">CONTACT</a>
-
-
-   <label class="theme-switch">
-    <input type="checkbox" id="themeToggle">
-
-    <span class="slider">
-        <span id="themeIcon" class="material-symbols-outlined">
-            light_mode
-        </span>
-    </span>
-</label>
- 
-</nav>
-
+    
+    <div class="logo">PAYFUME</div>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="contact.html">CONTACT</a>
+        <!--<a href="#" onclick="toggleMode()">☾</a>-->
+    </nav>
 </header>
 
-<section>
+<div class="split">
 
-    <h1 style="text-align:center;">Contact Us</h1>
+    <div class="side female">
+        <div class="overlay"></div>
+        <h1>FOR HER</h1>
+        <a href="services.html" class="button">Explore Women's</a>
+    </div>
 
-    <p style="text-align:center; margin-top:20px;">
-        We'd love to hear from you!
-    </p>
+    <div class="side male">
+        <div class="overlay"></div>
+        <h1>FOR HIM</h1>
+        <a href="services.html" class="button">Explore Men's</a>
+    </div>
 
-    <form id="contactForm" class="contact-form">
-        
-        <input type="text" placeholder="Your Name" required>
-        
-        <input type="email" placeholder="Your Email" required>
-        
-        <textarea rows="6" placeholder="Your Message" required></textarea>
-        
-        <button type="submit">Send Message</button>
-
-        <p id="successMessage" class="success-message"></p>
-
-    </form>
-
-</section>
+</div>
 
 <footer>
-    © 2026 PAYFUME. All Rights Reserved.
-     <p id="currentDateTime"></p>
+    © 2026 PAYFUME
 </footer>
 
-<!-- External JavaScript -->
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

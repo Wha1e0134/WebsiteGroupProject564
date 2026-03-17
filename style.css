@@ -234,48 +234,313 @@ footer {
     text-align: center;
 }
 /*===about====*/
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
-}
+ .about-hero {
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                  url(Images/fragrance.jpg) center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 140px 20px 100px;
+    }
 
+    .about-hero h1 {
+      font-size: 52px;
+      margin-bottom: 15px;
+      letter-spacing: 3px;
+    }
 
-header {
-    background: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+    .about-hero p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.8;
+    }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-}
+    .about-section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 20px;
+    }
 
-nav a:hover {
-    text-decoration: none;
-}
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
 
-/* Section */
-section {
-    padding: 120px 20px;
-    text-align: center;
+    .about-card {
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 30px;
+      background: #fff;
+      transition: 0.3s ease;
+    }
+
+    .about-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .about-card h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+
+    .about-card p {
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .about-intro {
+      text-align: center;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .about-intro h2 {
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    .about-intro p {
+      font-size: 17px;
+      line-height: 1.9;
+      color: #333;
+    }
+
+    .why-payfume {
+      margin-top: 70px;
+      text-align: center;
+    }
+
+    .why-payfume h2 {
+      margin-bottom: 30px;
+      font-size: 34px;
+    }
+
+    .why-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .why-item {
+      padding: 25px;
+      border: 1px solid #e5e5e5;
+      border-radius: 10px;
+      background: #fafafa;
+    }
+
+    .why-item i {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #000;
+    }
+
+    .why-item h4 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .why-item p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .about-cta {
+      margin-top: 80px;
+      text-align: center;
+      background: #000;
+      color: #fff;
+      padding: 70px 20px;
+      border-radius: 14px;
+    }
+
+    .about-cta h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .about-cta p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .about-cta a {
+      display: inline-block;
+      padding: 12px 28px;
+      border: 1px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .about-cta a:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: left;
+      padding-top: 30px;
+    }
+
+    .footer-links h3 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .footer-links a {
+      display: block;
+      color: #ddd;
+      text-decoration: none;
+      margin-bottom: 12px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      color: white;
+      font-size: 26px;
+      margin-right: 15px;
+    }
+
+    .payment-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .payment-icons span {
+      display: inline-block;
+      padding: 10px 14px;
+      background: #fff;
+      color: #000;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    body.dark .about-card,
+    body.dark .why-item {
+      background: #1a1a1a;
+      border-color: #333;
+      color: #fff;
+    }
+
+    body.dark .about-intro p,
+    body.dark .why-item p {
+      color: #ddd;
+    }
+
+    @media (max-width: 768px) {
+      .about-hero h1 {
+        font-size: 38px;
+      }
+
+      .about-hero p {
+        font-size: 16px;
+      }
+
+      .about-cta h2 {
+        font-size: 28px;
+      }
+    }
+/* === review section ====*/
+.review-form-section {
     max-width: 900px;
-    margin: auto;
+    margin: 80px auto;
+    padding: 20px;
 }
 
-/* Dropdown */
-.category-box {
-    margin-top: 40px;
+.review-form-box {
+    background: #f5f5f5;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 50px;
 }
 
-select {
-    padding: 10px 20px;
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.review-title-wrap {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.review-title-wrap h2 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.review-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #f2d3bf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7a3419;
     font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+}
+
+.review-form label {
+    display: block;
+    font-weight: 600;
+    margin: 18px 0 10px;
+    text-align: left;
+}
+
+.review-form label span {
+    color: #ff6a00;
+}
+
+.star-rating {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.star-rating .star {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #d9d9df;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.3s ease;
+}
+
+.star-rating .star.active {
+    background: #ff6a00;
 }
 
 /* Footer */

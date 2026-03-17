@@ -1,10 +1,4 @@
-function toggleMode() {
-    document.body.classList.toggle("dark");
-}
-const toggle = document.getElementById("theme-toggle");
-toggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-});
+
 
 // ===== CONTACT PAGE =====
 var form = document.getElementById("contactForm");
@@ -42,6 +36,81 @@ function showCategory(value) {
         window.location.href = "services.html?category=" + encodeURIComponent(value);
     }
 }
+// === about category === //
+function showCategory(value) {
+    if (value !== "") {
+        window.location.href = "services.html?category=" + encodeURIComponent(value);
+    }
+}                                                                                                                                                                                      // ===== REVIEW FORM =====
+var selectedRating = 0;
+var stars = document.querySelectorAll(".star");
+var ratingInput = document.getElementById("ratingValue");
+var reviewForm = document.getElementById("reviewForm");
+var reviewsList = document.getElementById("reviewsList");
+var reviewSuccess = document.getElementById("reviewSuccess");
+
+if (stars.length > 0) {
+    stars.forEach(function(star) {
+        star.addEventListener("click", function() {
+            selectedRating = this.getAttribute("data-value");
+            ratingInput.value = selectedRating;
+
+            stars.forEach(function(s) {
+                s.classList.remove("active");
+            });
+
+            stars.forEach(function(s) {
+                if (s.getAttribute("data-value") <= selectedRating) {
+                    s.classList.add("active");
+                }
+            });
+        });
+    });
+}
+
+if (reviewForm) {
+    reviewForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        var title = document.getElementById("reviewTitle").value;
+        var message = document.getElementById("reviewMessage").value;
+        var name = document.getElementById("reviewName").value;
+
+        if (selectedRating == 0) {
+            reviewSuccess.style.color = "red";
+            reviewSuccess.innerHTML = "Please select a star rating.";
+            return;
+        }
+
+        var reviewCard = document.createElement("div");
+        reviewCard.classList.add("review-card");
+
+        var starsHtml = "";
+        for (var i = 0; i < selectedRating; i++) {
+            starsHtml += "★";
+        }
+
+        reviewCard.innerHTML = `
+            <div class="review-stars">${starsHtml}</div>
+            <h3>${title}</h3>
+            <p>${message}</p>
+            <strong>- ${name}</strong>
+        `;
+
+        reviewsList.prepend(reviewCard);
+
+        reviewSuccess.style.color = "green";
+        reviewSuccess.innerHTML = "Thank you! Your review has been submitted.";
+
+        reviewForm.reset();
+        ratingInput.value = 0;
+        selectedRating = 0;
+
+        stars.forEach(function(s) {
+            s.classList.remove("active");
+        });
+    });
+}
 
 /*place order*/
 if (form) {
@@ -64,3 +133,41 @@ function updateDateTime() {
 
 setInterval(updateDateTime, 1000);
 updateDateTime();
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // ===== MENU =====
+    const menuBtn = document.getElementById("menuBtn");
+    const actionMenu = document.getElementById("action-menu");
+
+    if (menuBtn && actionMenu) {
+        menuBtn.addEventListener("click", function () {
+            actionMenu.classList.toggle("show");
+        });
+    }
+
+
+// ===== THEME TOGGLE =====
+
+const toggle = document.getElementById("themeToggle");
+const icon = document.getElementById("themeIcon");
+
+if (toggle && icon) {
+
+    toggle.addEventListener("change", function () {
+
+        document.body.classList.toggle("dark-mode");
+
+        if (toggle.checked) {
+            icon.textContent = "dark_mode";
+        } else {
+            icon.textContent = "light_mode";
+        }
+
+    });
+}
+});
